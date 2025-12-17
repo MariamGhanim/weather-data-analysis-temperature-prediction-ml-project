@@ -330,12 +330,12 @@ def main():
     pressure = st.sidebar.slider("Pressure (millibars)", 900.0, 1100.0, 1013.0, 0.1)
     
     # Date and time inputs
-    month = st.sidebar.selectbox("Month", range(1, 13), index=5)
+    season = st.sidebar.selectbox("Season", ["Winter", "Spring", "Summer", "Autumn"], index=1)
     hour = st.sidebar.selectbox("Hour", range(0, 24), index=12)
     
-    # Categorical inputs
-    season_map = {1: 0, 2: 0, 3: 1, 4: 1, 5: 1, 6: 2, 7: 2, 8: 2, 9: 3, 10: 3, 11: 3, 12: 0}
-    season = season_map[month]
+    # Map season to encoded value
+    season_map = {"Winter": 0, "Spring": 1, "Summer": 2, "Autumn": 3}
+    season_encoded = season_map[season]
     
     time_of_day_map = {
         range(0, 6): 0,   # Night
@@ -350,8 +350,6 @@ def main():
             break
     
     precip_type = st.sidebar.selectbox("Precipitation Type", ["rain", "snow"])
-    summary = st.sidebar.selectbox("Weather Summary", 
-                                  ["Partly Cloudy", "Mostly Cloudy", "Overcast", "Clear", "Foggy"])
     
     # Create feature vector
     if st.sidebar.button("Predict Temperature", type="primary"):
@@ -368,7 +366,7 @@ def main():
             # Create feature array (adjust based on your actual features)
             features = np.array([[
                 humidity, wind_speed, visibility, pressure,
-                month, hour, season, time_of_day,
+                season_encoded, hour, time_of_day,
                 humidity_cat, wind_cat, pressure_cat, visibility_cat
             ]])
             
