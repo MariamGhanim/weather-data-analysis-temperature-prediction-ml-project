@@ -349,8 +349,6 @@ def main():
             time_of_day = tod
             break
     
-    precip_type = st.sidebar.selectbox("Precipitation Type", ["rain", "snow"])
-    
     # Create feature vector
     if st.sidebar.button("Predict Temperature", type="primary"):
         try:
