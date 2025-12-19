@@ -1,4 +1,4 @@
-# Temperature Prediction ML Project
+# Weather Data Analysis & Temperature Prediction ML Project
 
 ![Application Screenshot](appPic.PNG)
 
