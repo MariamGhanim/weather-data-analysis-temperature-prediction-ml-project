@@ -2,6 +2,6 @@ streamlit==1.52.1
 pandas==2.3.3
 numpy==2.3.5
 scikit-learn==1.7.2
-lightgbm==4.6.0
-xgboost>=2.0.0
+joblib
 plotly==6.5.0
+huggingface_hub
