@@ -8,7 +8,7 @@ def run():
             <img src="https://cdn-icons-png.flaticon.com/512/4052/4052984.png" width="100">
             <h1 style="color:#1e3a8a;">Weather Temperature Predictor</h1>
             <p style="font-size:18px; color:#475569;">
-                AI-Driven Temperature Prediction Using Machine Learning
+                 Temperature Prediction Using Machine Learning
             </p>
         </div>
         """,

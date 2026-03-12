@@ -29,7 +29,6 @@ def run():
         """
         <div style="text-align:center; margin-bottom: 20px;">
             <h1 style="color:#1e3a8a;">Exploratory Data Analysis</h1>
-            <p style="color:#475569;">Interactive visualisations built with Plotly Express</p>
         </div>
         """,
         unsafe_allow_html=True,
