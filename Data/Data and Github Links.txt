@@ -1,0 +1,3 @@
+https://www.kaggle.com/datasets/muthuj7/weather-dataset/
+
+https://github.com/MariamGhanim/weather-data-analysis-temperature-prediction-ml-project
