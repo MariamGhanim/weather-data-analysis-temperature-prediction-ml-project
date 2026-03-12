@@ -73,8 +73,6 @@ streamlit run app.py
 ```
 ├── app.py                          # Streamlit web application
 ├── Notebook.ipynb                  # Full ML pipeline (EDA, training, tuning)
-├── best_random_forest_model.joblib # Trained model
-├── scaler.joblib                   # Fitted StandardScaler
 ├── requirements.txt                # Python dependencies
 ├── Data/
 │   ├── weatherHistory.csv          # Raw dataset
