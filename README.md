@@ -57,7 +57,12 @@ An interactive **Streamlit** dashboard allows users to adjust weather parameters
 - Gauge visualization powered by Plotly
 - Model performance metrics (R² and MAE) displayed on the dashboard
 
-### Run the App
+### Live Demo
+
+The app is deployed and accessible at:
+**[https://weather-data-analysis-temperature-prediction-ml-project.streamlit.app](https://weather-data-analysis-temperature-prediction-ml-project.streamlit.app)**
+
+### Run the App Locally
 
 ```bash
 streamlit run app.py
@@ -106,7 +111,7 @@ streamlit run app.py
 | Data | Pandas, NumPy |
 | Visualization | Matplotlib, Seaborn, Plotly |
 | ML | scikit-learn, XGBoost |
-| Deployment | Streamlit |
+| Deployment | Streamlit Cloud |
 
 ## Author
 
